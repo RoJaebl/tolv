@@ -130,7 +130,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @extend %galleryImg;
     cursor: pointer;
     .gallery__item__background {
       transition: filter 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -139,6 +138,7 @@ header {
       display: flex;
       justify-self: center;
       align-items: center;
+      @extend %galleryImg;
     }
     .gallery__item__text {
       position: absolute;
