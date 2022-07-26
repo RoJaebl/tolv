@@ -1,0 +1,7 @@
+%galleryImg {
+  background-size: cover;
+  background-position: center center;
+}
+@mixin RandomImage($num) {
+  background-image: url("https://source.unsplash.com/random/" + $num);
+}
