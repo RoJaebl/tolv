@@ -162,70 +162,24 @@ header {
         }
       }
     }
-    &:first-child {
-      grid-column-start: span 2;
-      .gallery__item__background {
-        @include RandomImage(1);
+    @include RandomImage(1);
+    @include RandomImage(2);
+    @include RandomImage(3);
+    @include RandomImage(4);
+    @include RandomImage(5);
+    @include RandomImage(6);
+    @include RandomImage(7);
+    @include RandomImage(8);
+    @include RandomImage(9);
+    @include RandomImage(10);
+    @include RandomImage(11);
+    @include RandomImage(12);
+    @each $num in(1, 5, 7, 10) {
+      &:nth-child(#{$num}) {
+        grid-column-start: span 2;
       }
     }
-    &:nth-child(2) {
-      .gallery__item__background {
-        @include RandomImage(2);
-      }
-    }
-    &:nth-child(3) {
-      .gallery__item__background {
-        @include RandomImage(3);
-      }
-    }
-    &:nth-child(4) {
-      .gallery__item__background {
-        @include RandomImage(4);
-      }
-    }
-    &:nth-child(5) {
-      grid-column-start: span 2;
-      .gallery__item__background {
-        @include RandomImage(5);
-      }
-    }
-    &:nth-child(6) {
-      .gallery__item__background {
-        @include RandomImage(6);
-      }
-    }
-    &:nth-child(7) {
-      grid-column-start: span 2;
-      .gallery__item__background {
-        @include RandomImage(7);
-      }
-    }
-    &:nth-child(8) {
-      .gallery__item__background {
-        @include RandomImage(8);
-      }
-    }
-    &:nth-child(9) {
-      .gallery__item__background {
-        @include RandomImage(9);
-      }
-    }
-    &:nth-child(10) {
-      grid-column-start: span 2;
-      .gallery__item__background {
-        @include RandomImage(10);
-      }
-    }
-    &:nth-child(11) {
-      .gallery__item__background {
-        @include RandomImage(11);
-      }
-    }
-    &:last-child {
-      .gallery__item__background {
-        @include RandomImage(12);
-      }
-    }
+
     &:hover {
       .gallery__item__background {
         opacity: 0.4;

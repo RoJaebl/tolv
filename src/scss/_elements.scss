@@ -3,5 +3,9 @@
   background-position: center center;
 }
 @mixin RandomImage($num) {
-  background-image: url("https://source.unsplash.com/random/" + $num);
+  &:nth-child(#{$num}) {
+    .gallery__item__background {
+      background-image: url("https://source.unsplash.com/random/" + $num);
+    }
+  }
 }
